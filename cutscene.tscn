@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=4 uid="uid://qx1i51t1x60e"]
+
+[ext_resource type="TileSet" uid="uid://bf4ete77hasus" path="res://everything.tres" id="1_kewv3"]
+[ext_resource type="FontFile" uid="uid://ckj16lcn1qmex" path="res://Early GameBoy.ttf" id="2_58crd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_82ctk"]
+line_spacing = 0.0
+font = ExtResource("2_58crd")
+font_size = 8
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 160.0
+offset_bottom = 144.0
+color = Color(0.345098, 0.560784, 0.239216, 1)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAACAAUAAQABAAAAAAADAAUAAQABAAAAAAAEAAUAAQABAAAAAAAFAAUAAQABAAAAAAAGAAUAAQABAAAAAAAHAAUAAQABAAAAAAAIAAUAAQABAAAAAAABAAgAAQACAAMAAAACAAgAAQACAAMAAAADAAgAAQACAAMAAAAEAAgAAQACAAMAAAAFAAgAAQACAAMAAAAGAAgAAQACAAMAAAAHAAgAAQACAAMAAAAIAAgAAQACAAMAAAAAAAUAAQAAAAAAAAABAAUAAQABAAAAAAAJAAUAAQAJAAAAAAAAAAgAAQAAAAMAAAAJAAgAAQAJAAMAAAAAAAYAAQAAAAEAAAAAAAcAAQAAAAEAAAAJAAYAAQAJAAEAAAAJAAcAAQAJAAEAAAA=")
+tile_set = ExtResource("1_kewv3")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 92.0
+offset_right = 213.0
+offset_bottom = 136.0
+text = "this is an
+example scene ..."
+label_settings = SubResource("LabelSettings_82ctk")

@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://to5mmkiklbut"]
+
+[ext_resource type="Texture2D" uid="uid://d25ymk2u5sfbx" path="res://monster.png" id="1_20tdv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frmuw"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(0, 0, 47, 94)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxhkh"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(47, 0, 47, 94)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1s3j"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(94, 0, 47, 94)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71nfk"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(141, 0, 47, 94)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytll1"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(188, 0, 47, 94)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bam8l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frmuw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxhkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1s3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71nfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytll1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="virtual-pet-scene" type="Node2D"]
+
+[node name="Monster" type="AnimatedSprite2D" parent="."]
+position = Vector2(77, 68)
+sprite_frames = SubResource("SpriteFrames_bam8l")
+frame_progress = 0.641885
