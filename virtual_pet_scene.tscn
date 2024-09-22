@@ -87,6 +87,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_p5ry0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71nfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71nfk")
 }],
 "loop": true,
 "name": &"eat_corpse",
@@ -99,4 +105,5 @@ animations = [{
 position = Vector2(77, 68)
 sprite_frames = SubResource("SpriteFrames_bam8l")
 animation = &"eat_corpse"
-frame_progress = 0.69516
+frame = 10
+frame_progress = 0.42764
