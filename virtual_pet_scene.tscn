@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://to5mmkiklbut"]
+[gd_scene load_steps=12 format=3 uid="uid://to5mmkiklbut"]
 
 [ext_resource type="Texture2D" uid="uid://d25ymk2u5sfbx" path="res://monster.png" id="1_20tdv"]
 
@@ -22,6 +22,22 @@ region = Rect2(144, 0, 48, 96)
 atlas = ExtResource("1_20tdv")
 region = Rect2(192, 0, 48, 96)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0jb3"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(96, 0, 48, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rujan"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(0, 96, 48, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de68y"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(48, 96, 48, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5ry0"]
+atlas = ExtResource("1_20tdv")
+region = Rect2(96, 96, 48, 96)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_bam8l"]
 animations = [{
 "frames": [{
@@ -43,6 +59,38 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0jb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rujan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rujan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de68y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5ry0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de68y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5ry0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de68y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5ry0")
+}],
+"loop": true,
+"name": &"eat_corpse",
+"speed": 5.0
 }]
 
 [node name="virtual-pet-scene" type="Node2D"]
@@ -50,4 +98,5 @@ animations = [{
 [node name="Monster" type="AnimatedSprite2D" parent="."]
 position = Vector2(77, 68)
 sprite_frames = SubResource("SpriteFrames_bam8l")
-frame_progress = 0.641885
+animation = &"eat_corpse"
+frame_progress = 0.69516
